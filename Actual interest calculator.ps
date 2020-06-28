@@ -1,0 +1,48 @@
+# To add a new cell, type '# %%'
+# To add a new markdown cell, type '# %% [markdown]'
+# %%
+amount = 10000000
+
+
+# %%
+ror = 10
+
+
+# %%
+taxrate = 30
+
+
+# %%
+avg_inflation = 4
+
+
+# %%
+def calculator():
+    
+    global amount
+    global ror
+    global taxrate
+    global avg_inflation
+
+    # Calculates interest or gain
+    interest = (amount * ror)/100 
+    
+    #Deducts tax on interest or gain
+    after_tax = interest - (interest * taxrate)/100
+    
+    #Sums up interest/gain after tax with amount
+    sum_up = after_tax + amount
+    
+    #Deducts inflation on that amount
+    after_inflation = sum_up - (sum_up * avg_inflation)/100
+    
+    print("After one year of investment you will get " + str(after_inflation) + " .")
+
+
+# %%
+calculator()
+
+
+# %%
+
+
