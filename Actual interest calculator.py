@@ -7,6 +7,6 @@ def calculator(amount,taxrate,roi,inflation,years):
 
     print(total_amount)
     print("After deducting tax and inflation* your investment value would be " + str(final_amount) + " at the rate of " + str(roi) + "% compunded " + str(years) + " times.")
-    print(" * - inflation is deducted on total amount")
+    print("* - inflation is deducted on total amount")
 
 calculator(100,30,10,4,4)
